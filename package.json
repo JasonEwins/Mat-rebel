@@ -1,0 +1,22 @@
+{
+  "name": "matrebel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonEwins/Mat-rebel.git"
+  },
+  "author": "jasonewins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonEwins/Mat-rebel/issues"
+  },
+  "homepage": "https://github.com/JasonEwins/Mat-rebel#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
