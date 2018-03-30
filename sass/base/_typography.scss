@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'HKGrotesk-Light';
+    src:url('../fonts/HKGrotesk-Light.woff') format('woff'),
+        url('../fonts/HKGrotesk-Light.woff2') format('woff2'),
+        url('../fonts/HKGrotesk-Light.eot') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'HKGrotesk-Regular';
+    src:url('../fonts/HKGrotesk-Regular.woff') format('woff'),
+        url('../fonts/HKGrotesk-Regular.woff2') format('woff2'),
+        url('../fonts/HKGrotesk-Regular.eot') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HKGrotesk-Medium';
+    src:url('../fonts/HKGrotesk-Medium.woff') format('woff'),
+        url('../fonts/HKGrotesk-Medium.woff2') format('woff2'),
+        url('../fonts/HKGrotesk-Medium.eot') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HKGrotesk-Bold';
+    src:url('../fonts/HKGrotesk-Bold.woff') format('woff'),
+        url('../fonts/HKGrotesk-Bold.woff2') format('woff2'),
+        url('../fonts/HKGrotesk-Bold.eot') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+input {
+  -webkit-font-smoothing: antialiased;
+  -moz-osz-smoothing: grayscale;
+}
+
+body {
+  font-family:'HKGrotesk-Regular', san-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-dark-black;
+}
+
+.heading--primary {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
