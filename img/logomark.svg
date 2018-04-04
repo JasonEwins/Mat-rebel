@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="49px" height="47px" viewBox="0 0 49 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="MR-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-163.000000, -640.000000)">
+        <g id="About" transform="translate(-30.000000, 70.000000)">
+            <g id="Logo" transform="translate(196.000000, 568.000000)">
+                <polyline id="Left-border" stroke="#0E0E0E" stroke-width="4.8384" points="19 46 0 46 0 5 0 5 19 5"></polyline>
+                <polyline id="Right-border" stroke="#0E0E0E" stroke-width="4.8384" points="24 5 43 5 43 46 24.6828259 46 28.4793705 46"></polyline>
+                <text id="M" font-family="Lato-Black, Lato" font-size="32.9728" font-weight="700" letter-spacing="0.549546671" fill="#0E0E0E">
+                    <tspan x="6" y="38">M</tspan>
+                </text>
+                <g id="M-triangle" transform="translate(7.000000, 34.000000)" fill="#FFFFFF">
+                    <polygon id="Triangle" transform="translate(25.256854, 3.857525) scale(-1, 1) rotate(258.000000) translate(-25.256854, -3.857525) " points="25.2568536 0.982858443 28.1598251 6.73219178 22.3538821 6.73219178"></polygon>
+                    <polygon id="Triangle" transform="translate(3.443096, 3.857525) rotate(258.000000) translate(-3.443096, -3.857525) " points="3.44309632 0.982858443 6.34606782 6.73219178 0.540124821 6.73219178"></polygon>
+                </g>
+                <g id="Triangle-frame" transform="translate(15.000000, 0.000000)"></g>
+                <g id="M-Spacers" transform="translate(13.000000, 13.000000)" fill="#FFFFFF">
+                    <rect id="Rectangle-2" x="0" y="0" width="1.93231399" height="24.5345474"></rect>
+                    <rect id="Rectangle-2" x="15.8610773" y="0.0817818248" width="1.93231399" height="24.5345474"></rect>
+                    <rect id="Rectangle-2" x="7.08515129" y="1.88098197" width="3.38154948" height="24.5345474"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

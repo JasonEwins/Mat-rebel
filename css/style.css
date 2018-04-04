@@ -14,6 +14,9 @@ body {
 a {
   text-decoration: none; }
 
+button {
+  border: none; }
+
 @font-face {
   font-family: 'HKGrotesk-Light';
   src: url("../fonts/HKGrotesk-Light.woff") format("woff"), url("../fonts/HKGrotesk-Light.woff2") format("woff2"), url("../fonts/HKGrotesk-Light.eot") format("embedded-opentype");
@@ -47,9 +50,79 @@ body {
   font-family: 'HKGrotesk-Regular', san-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #0E0E0E; }
+  color: #1D1D1D; }
 
 .heading--primary {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 2px; }
+
+.section--content {
+  padding: 0 4.75rem;
+  margin-bottom: 4.2rem;
+  font-family: 'HKGrotesk-Light', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.2rem; }
+
+.btn {
+  padding: 1.7rem 3.5rem;
+  margin-bottom: 4rem;
+  font-family: 'HKGrotesk-Medium', sans-serif;
+  font-size: 1.3rem;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%); }
+
+.btn-green {
+  background: #AEC1B9; }
+
+.vert-border {
+  position: absolute;
+  border-left: 1px solid #E5E5E5;
+  height: 19rem;
+  left: calc(50% - 0.5px);
+  margin-top: 9rem; }
+
+.header {
+  position: relative;
+  height: 6rem; }
+
+.header__logo {
+  margin-top: 2rem;
+  margin-left: 2.7rem; }
+
+.header__bookbutton {
+  position: absolute;
+  padding-left: 1.5rem;
+  top: 1.8rem;
+  right: 2.6rem;
+  background: #2B2C32;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: .65px;
+  text-transform: uppercase;
+  text-align: left;
+  transform: rotate(-7deg);
+  color: white;
+  z-index: 1; }
+
+.header__bg {
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 0 100%); }
+
+.header__namaste {
+  position: absolute;
+  top: 10rem;
+  left: calc(50% - 85px); }
+
+.about {
+  position: relative;
+  margin-top: 2.1rem;
+  height: 40rem;
+  text-align: center; }
+
+.about__logomark {
+  margin-bottom: 3.3rem; }
+
+.benefits {
+  background: #FAFAFA; }

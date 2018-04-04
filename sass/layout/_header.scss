@@ -1,1 +1,38 @@
+.header {
+  position: relative;
+  height: 6rem;
+}
 
+.header__logo {
+  margin-top: 2rem;
+  margin-left: 2.7rem;
+}
+
+.header__bookbutton {
+  position: absolute;
+  padding-left: 1.5rem;
+  top: 1.8rem;
+  right: 2.6rem;
+  background: $color-primary-black;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: .65px;
+  text-transform: uppercase;
+  text-align: left;
+  transform: rotate(-7deg);
+  color: white;
+  z-index: 1;
+}
+
+.header__bg {
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 0 100%);
+}
+
+.header__namaste {
+  position: absolute;
+  top: 10rem;
+  left: calc(50% - 85px); 
+}
