@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Down arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="29.5" cy="29.5" r="29.5"></circle>
+        <filter x="-21.2%" y="-19.5%" width="142.4%" height="142.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.686809099   0 0 0 0 0.686809099   0 0 0 0 0.686809099  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="matrebel-desktop-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-683.000000, -733.000000)">
+        <g id="Down-arrow" transform="translate(691.000000, 740.000000)">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="angle-arrow-down" transform="translate(20.000000, 24.000000)" fill="#000000" fill-rule="nonzero">
+                <path d="M19.7952281,1.25827545 L18.7935439,0.232670659 C18.6600702,0.0957125749 18.5063158,0.0274491018 18.3324912,0.0274491018 C18.1590877,0.0274491018 18.0054035,0.0957125749 17.8719298,0.232670659 L9.99761404,8.29516168 L2.12364912,0.232886228 C1.99010526,0.0959281437 1.83642105,0.0276646707 1.66280702,0.0276646707 C1.48912281,0.0276646707 1.3354386,0.0959281437 1.20196491,0.232886228 L0.200421053,1.25856287 C0.0666666667,1.39523353 0,1.5525988 0,1.73044311 C0,1.90814371 0.066877193,2.06550898 0.200421053,2.20217964 L9.53677193,11.7623713 C9.67024561,11.8991138 9.824,11.9674491 9.99761404,11.9674491 C10.1712281,11.9674491 10.3247018,11.8991138 10.4581053,11.7623713 L19.7952281,2.20217964 C19.9287018,2.06543713 19.9950175,1.90807186 19.9950175,1.73044311 C19.9950175,1.5525988 19.9287018,1.39523353 19.7952281,1.25827545 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

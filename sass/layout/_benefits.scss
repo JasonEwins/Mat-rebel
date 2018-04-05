@@ -1,3 +1,77 @@
 .benefits {
+  position: relative;
   background: $color-bg-grey;
+  text-align: center;
+  height: 95vh;
+
+  @include respond(desktop) {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+    grid-template-rows: 1fr 16rem 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+.benefits__intro {
+  padding-top: 17rem;
+
+  @include respond(desktop) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-bottom: 0;
+  }
+}
+
+.benefits__btn {
+  @include respond(desktop) {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    align-self: start;
+    margin-bottom: 0;
+  }
+}
+
+.benefits__energise,
+.benefits__pause,
+.benefits__unwind {
+  position: absolute;
+}
+
+.benefits__energise {
+  top: 4rem;
+  right: 0;
+
+  @include respond(desktop) {
+    right: -2rem;
+    width: 240px;
+    height: 195px;
+  }
+}
+
+.benefits__pause {
+  top: 43rem;
+  left: 0;
+
+  @include respond(desktop) {
+    top: 27rem;
+    left: -2rem;
+    width: 259px;
+    height: 256px;
+  }
+}
+
+.benefits__unwind {
+  top: 52rem;
+  right: 0;
+
+  @include respond(desktop) {
+    top: 46rem;
+    right: -2rem;
+    width: 603px;
+    height: 157px;
+  }
 }

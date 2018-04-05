@@ -9,16 +9,31 @@
 html {
   font-size: 62.5%;
   //10px base
+  
+  @include respond(big-desktop) {
+    font-size: 75%; // 1 rem = 12px 12/16
+  }
 }
 
 body {
   box-sizing: border-box;
 }
 
+h2 {
+  font-weight: 600;
+}
+
 a {
   text-decoration: none;
+  color: $color-black;
+}
+
+ul {
+  list-style: none;
 }
 
 button {
   border: none;
+  cursor: pointer;
+  outline: none;
 }

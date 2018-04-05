@@ -1,0 +1,26 @@
+.social {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 25% 1fr 1fr 25%;
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  background: $color-bg-grey;
+  height: 27rem;
+}
+.social__logo {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.social__icons {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+.social-icon {
+  width: 3.7rem;
+  height: auto;
+  margin-left: 2rem;
+}

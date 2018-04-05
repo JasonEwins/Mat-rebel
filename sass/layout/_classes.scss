@@ -1,0 +1,75 @@
+.classes {
+  text-align: center;
+  background: $color-bg-grey;
+}
+
+.classes__intro {
+  padding-top: 5rem;
+}
+
+.classes__pricing--top,
+.classes__pricing--btm {
+  display: block;
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  padding: 0 4.75rem;
+
+  @include respond(desktop) {
+    font-size: 2rem;
+  }
+}
+
+.classes__pricing--btm {
+  margin-bottom: 5rem;
+}
+
+.pricing--yellowbg {
+  background: $color-primary-yellow;
+}
+
+.pricing--greenbg {
+  background: $color-primary-green;
+}
+
+.classes__month {
+  font-size: 2.1rem;
+  text-decoration: underline;
+
+  @include respond(desktop) {
+    padding-top: 2rem;
+    color: $color-primary-black;
+  }
+}
+
+.classes__date {
+  display: inline-block;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  padding: 6px 3.5rem;
+  background: $color-primary-black;
+  font-family: 'HKGrotesk-Medium', sans-serif;
+  font-size: 1.8rem;
+  color: $color-white;
+
+  @include respond(desktop) {
+    margin-bottom: 6rem;
+  }
+}
+
+.classes__showmore {
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+  font-family: 'HKGrotesk-Medium', sans-serif;
+  font-size: 1.8rem;
+
+  @include respond(desktop) {
+    padding-top: 4rem;
+  }
+}
+
+.down-arrow {
+  width: 2rem;
+  height: auto;
+  padding-left: 6px;
+}

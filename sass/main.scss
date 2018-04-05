@@ -7,9 +7,16 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/class";
+
 @import "layout/header";
 @import "layout/about";
 @import "layout/benefits";
+@import "layout/instructor";
+@import "layout/classes";
+@import "layout/privateclass";
+@import "layout/social";
+@import "layout/footer";
 
 @import "pages/home";
 

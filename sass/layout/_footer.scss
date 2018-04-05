@@ -1,0 +1,38 @@
+footer {
+  text-align: center;
+}
+
+.contact {
+  margin-bottom: 5rem;
+}
+
+.contact__title {
+  padding-top: 5rem;
+}
+
+.contact__email,
+.contact__tel {
+  display: block;
+  font-size: 1.8rem;
+  color: $color-black;
+
+  @include respond(desktop) {
+    font-size: 2.1rem;
+  }
+}
+
+.contact__email {
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.footer__logomark {
+  margin-bottom: 3rem;
+}
+
+.footer__legal {
+  display: block;
+  font-size: 16px;
+  color: $color-primary-grey;
+  margin-bottom: 4rem;
+}

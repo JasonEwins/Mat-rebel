@@ -1,0 +1,129 @@
+.classes__class {
+  text-align: left;
+  padding: 0 4.75rem;
+  overflow: hidden;
+
+  @include respond(desktop) {
+    display: grid;
+    grid-template-columns: 10% auto auto auto 10%;
+    grid-template-rows: auto 1rem;
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+}
+
+.classes__class:nth-child(2n) {
+  @include respond(desktop) {
+    margin-bottom: 4rem;
+  }
+}
+
+.classes__time {
+  display: block;
+  font-family: 'HKGrotesk-Medium', sans-serif;
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+
+  @include respond(desktop) {
+    grid-column-start: 2;
+    justify-items: start;
+    align-self: start;
+    margin-bottom: 0;
+    font-size: 2.4rem;  
+  }
+}
+
+.classes__name {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: -4px;
+
+
+  @include respond(desktop) {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    justify-self: start;
+    align-self: start;
+    font-size: 2rem;   
+  }
+}
+
+.classes__venue {
+  display: block;
+  font-family: 'HKGrotesk-Regular', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+
+
+  @include respond(desktop) {
+    grid-column-start: 3;
+    grid-row-start: 2;  
+    justify-self: start;
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+    font-size: 2rem; 
+  }
+}
+
+.classes__venue:hover {
+  @include respond(desktop) {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+  
+
+.classes__venuemap {
+  display: flex;
+  margin-bottom: 3.2rem;
+
+  @include respond(desktop) {
+    display: none;
+  }
+
+}
+
+.classes__map {
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  color: $color-primary-red;
+}
+
+.classes__book {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  padding: 1.7rem 2.2rem;
+  background-color: $color-btn-grey;
+  transition: all .18s ease-in-out;
+
+  @include respond(desktop) {
+    grid-column-start: 4;
+    grid-row-start: 1;  
+    margin-bottom: 0;
+  }
+}
+
+.classes__book:hover {
+  background-color: $color-hover-grey;
+}
+
+.btn--add {
+  padding-left: 2rem;
+}
+
+.classes__border--btm {
+  border-bottom: 1px solid $color-grey;
+  margin-right: -8rem;
+  margin-bottom: 3rem;
+
+  @include respond(desktop) {
+    width: 100%;
+    margin-right: 0;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}

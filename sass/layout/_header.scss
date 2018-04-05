@@ -1,12 +1,47 @@
 .header {
   position: relative;
   height: 6rem;
+
+  @include respond(desktop) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 7rem;
+  }
 }
 
 .header__logo {
   margin-top: 2rem;
   margin-left: 2.7rem;
+
+  @include respond(desktop) {
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
+
+.header__mark {
+  @include respond(desktop) {
+    margin-left: 5%;
+    margin-right: 30%;
+  }
+}
+
+.header__nav {
+  display: none;
+
+  @include respond(desktop) {
+    display: initial;
+    font-size: 1.8rem;
+    margin-left: 5%;
+  }  
+}
+
+.header__navitem {
+  float: left;
+  margin-right: 4.3rem;
+}
+
 
 .header__bookbutton {
   position: absolute;
@@ -25,14 +60,63 @@
   transform: rotate(-7deg);
   color: white;
   z-index: 1;
+
+  @include respond(desktop) {
+    right: 4%;
+    line-height: 1.3rem;
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+.header__bookbutton:hover {
+  transform: scale(1.05);
+  background: $color-primary-red;
 }
 
 .header__bg {
-  clip-path: polygon(0 0, 100% 0, 100% 91%, 0 100%);
+  background-image: url(/img/hero-small.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100vw;
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
+
+  @include respond(desktop) {
+    background-image: url(/img/hero-lg.jpg);
+    background-position: center;
+    clip-path: none;
+    height: 80vh;  
+    margin-bottom: 10rem;
+  }
 }
 
 .header__namaste {
+  background-image: url(/img/namaste-blonde.svg);
+  background-repeat: no-repeat;
+  width: 17rem;
+  height: 9.5rem;
   position: absolute;
   top: 10rem;
   left: calc(50% - 85px); 
+
+  @include respond(desktop) {
+    background-image: url(/img/namaste-lg.svg);
+    background-repeat: no-repeat;
+    width: 32.7rem;
+    height: 17.8rem;
+    top: 15rem;
+    left: 80rem;
+  }
+}
+
+.header__scroll {
+  display: none;
+
+  @include respond(desktop) {
+    display: initial;
+    position: absolute;
+    bottom: 2.95rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

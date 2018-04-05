@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="280px" height="123px" viewBox="0 0 280 123" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Namaste Ox</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="matrebel-desktop-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1013.000000, -191.000000)">
+        <g id="Namaste-Ox" transform="translate(1153.000000, 252.500000) rotate(-6.000000) translate(-1153.000000, -252.500000) translate(1014.000000, 177.000000)">
+            <rect id="green-bg-top" fill="#AEC1B9" transform="translate(106.216000, 46.002000) rotate(8.000000) translate(-106.216000, -46.002000) " x="3.553" y="14.586" width="205.326" height="62.832"></rect>
+            <rect id="green-bg-btm" fill="#AEC1B9" transform="translate(181.374196, 106.963804) rotate(8.000000) translate(-181.374196, -106.963804) " x="88.7204032" y="75.5478036" width="185.307585" height="62.832"></rect>
+            <text id="Oxford" transform="translate(179.798146, 105.102139) rotate(8.000000) translate(-179.798146, -105.102139) " font-family="DKMoreOrLess-Regular, DK More Or Less" font-size="44.88" font-weight="normal" letter-spacing="1.41372002" fill="#0E0E0E">
+                <tspan x="108.798146" y="123.102139">Oxford</tspan>
+            </text>
+            <text id="Namaste" transform="translate(110.050000, 44.952000) rotate(8.000000) translate(-110.050000, -44.952000) " font-family="DKMoreOrLess-Regular, DK More Or Less" font-size="44.88" font-weight="normal" letter-spacing="1.41372002" fill="#0E0E0E">
+                <tspan x="28.05" y="62.952">Namaste</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

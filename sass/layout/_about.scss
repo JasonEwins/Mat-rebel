@@ -1,10 +1,36 @@
 .about {
   position: relative;
-  margin-top: 2.1rem;
+  margin-top: -5rem;
   height: 40rem;
   text-align: center;
+
+  @include respond(desktop) {
+    height: auto;
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+    grid-template-rows: 1fr 16rem 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    /*margin-top: $margin-top-lrg;*/
+  }
 }
 
 .about__logomark {
-  margin-bottom: 3.3rem;
+  margin-bottom: 5rem;
+
+  @include respond(desktop) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-bottom: 0;
+  }
+}
+
+.about__book {
+  @include respond(desktop) {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+  }
 }
