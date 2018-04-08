@@ -46,7 +46,8 @@
     grid-row-start: 1;
     justify-self: start;
     align-self: start;
-    font-size: 2rem;   
+    font-size: 2rem;
+    margin-bottom: -1rem;   
   }
 }
 
@@ -108,7 +109,6 @@
 @include respond(desktop) {
   .classes__book:hover {
     background: $color-primary-green;
-    transform: translateX(2px);
   }
 }
 

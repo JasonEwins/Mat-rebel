@@ -10,6 +10,27 @@ footer {
   padding-top: 5rem;
 }
 
+.border::after {
+	content: '';
+  position: absolute;
+  left: calc(50% - 5.1rem);
+  display: inline-block;
+  margin-top: 1.9rem;
+  z-index: -1;
+  border-bottom: 8px solid $color-primary-yellow;
+	width: 10rem;
+	transform: skew(-10deg) rotate(2.5deg);
+  -webkit-transform: skew(-10deg) rotate(2.5deg);
+  -moz-transform: skew(-10deg) rotate(2.5deg);
+
+  @include respond(desktop) {
+    width: 15.75rem;
+    margin-top: 3.3rem;
+    left: calc(50% - 7.9rem);
+    border-bottom: 10px solid $color-primary-yellow;
+  }
+}
+
 .contact__email,
 .contact__tel {
   display: block;

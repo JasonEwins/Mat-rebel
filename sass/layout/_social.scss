@@ -23,4 +23,9 @@
   width: 3.7rem;
   height: auto;
   margin-left: 2rem;
+  transition: 0.6s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
 }

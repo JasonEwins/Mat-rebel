@@ -99,8 +99,6 @@
   }*/
 }
 
-
-
 .header__bookbutton {
   position: absolute;
   padding-left: 1.5rem;
@@ -133,12 +131,54 @@
   background: $color-primary-red;
 }
 
+.header__main {
+  display: none;
+
+  @include respond(desktop) {
+    display: initial;
+    position: absolute;
+    top: 24rem;
+    left: 8%;
+  }
+}
+
+@include respond(desktop) {
+  .header__intro {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.7rem;
+  }
+
+  .header__introborder {
+    border-bottom: 4px solid $color-primary-green;
+    width: 40%;
+    margin-bottom: 7rem;
+  }
+
+  .hero__book {
+    border: 1px solid $color-primary-black;
+    color: $color-white;
+    font-size: 1.8rem;
+    background-color: $color-primary-black;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+    padding: 1.5rem 3.2rem;
+    transition: all 0.4s ease-out; 
+  }
+
+  .hero__book:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 82%);
+    background-color: $color-black;
+  }
+}
+
 .header__bg {
   background-image: url(/img/hero-small.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
 
   @include respond(lg-mobile) {
     background-image: url(/img/hero-med.jpg);
@@ -160,7 +200,7 @@
   width: 17rem;
   height: 9.5rem;
   position: absolute;
-  top: 10rem;
+  top: 9rem;
   left: calc(50% - 85px); 
 
   @include respond(desktop) {
@@ -169,7 +209,7 @@
     width: 32.7rem;
     height: 17.8rem;
     top: 15rem;
-    left: 80rem;
+    left: 70%;
   }
 }
 

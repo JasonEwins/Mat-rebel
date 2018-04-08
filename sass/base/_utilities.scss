@@ -47,34 +47,6 @@
 
 
 // borders
-
-.border::after {
-	content: '';
-  position: absolute;
-  left: calc(50% - 5.1rem);
-  display: inline-block;
-  margin-top: 1.9rem;
-  z-index: -1;
-  border-bottom: 11px solid $color-primary-yellow;
-	width: 27%;
-	transform: skew(-10deg) rotate(2deg);
-  -webkit-transform: skew(-10deg) rotate(2deg);
-  -moz-transform: skew(-10deg) rotate(2deg);
-
-  @include respond(desktop) {
-    width: 12.4%;
-    margin-top: 3.1rem;
-    left: calc(50% - 7.9rem);
-  }
-}
-
-/*.vb--small {
-  position: absolute;
-  border-left: 1px solid $color-primary-black;
-  height: 4rem;
-  margin-left: 1rem;
-}*/
-
 .vb--med,
 .vb--long {
   position: absolute;
@@ -96,7 +68,7 @@
   height: 35rem;
 
   @include respond(desktop) {
-    height: 25rem;
+    display: none;
   }
 }
 
