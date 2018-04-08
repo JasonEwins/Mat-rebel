@@ -96,17 +96,20 @@
   margin-bottom: 4rem;
   padding: 1.7rem 2.2rem;
   background-color: $color-btn-grey;
-  transition: all .18s ease-in-out;
 
   @include respond(desktop) {
     grid-column-start: 4;
     grid-row-start: 1;  
     margin-bottom: 0;
+    transition: all .5s ease-in-out;
   }
 }
 
-.classes__book:hover {
-  background-color: $color-hover-grey;
+@include respond(desktop) {
+  .classes__book:hover {
+    background: $color-primary-green;
+    transform: translateX(2px);
+  }
 }
 
 .btn--add {
@@ -115,6 +118,7 @@
 
 .classes__border--btm {
   border-bottom: 1px solid $color-grey;
+  margin-top: 5rem;
   margin-right: -8rem;
   margin-bottom: 3rem;
 

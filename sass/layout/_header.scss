@@ -10,6 +10,35 @@
   }
 }
 
+.header__desktop {
+  display: none;
+}
+
+@include respond(desktop) {
+  .header__desktop {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.5s ease;
+    transform: translateY(-200%);
+    background-color: $color-white;
+    height: 7rem;
+    z-index: 10;
+    box-shadow: 0 0 4px 0px rgba(65, 65, 65, 0.5);
+  }
+
+  .visible {
+    opacity: 1;
+  }
+
+  .header__desktop.visible {
+    transform: translateY(0);
+  }
+}  
+
 .header__logo {
   margin-top: 2rem;
   margin-left: 2.7rem;
@@ -32,7 +61,6 @@
 
   @include respond(desktop) {
     display: initial;
-    font-size: 1.8rem;
     margin-left: 5%;
   }  
 }
@@ -41,6 +69,36 @@
   float: left;
   margin-right: 4.3rem;
 }
+  
+@include respond(desktop) {
+  .header__navlink {
+    display: inline-block;
+    position: relative;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .header__navlink:hover {
+    color: $color-primary-green;
+ }
+
+  /*.header__navlink:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 0.1em;
+    margin-top: 1.7rem;
+    z-index: -1;
+    border-bottom: 8px solid  $color-primary-yellow;
+    width: 100%;
+    transform: skew(-10deg) rotate(2deg);
+    -webkit-transform: skew(-10deg) rotate(2deg);
+    -moz-transform: skew(-10deg) rotate(2deg);
+  }*/
+}
+
 
 
 .header__bookbutton {
@@ -60,6 +118,7 @@
   transform: rotate(-7deg);
   color: white;
   z-index: 1;
+  border: none;
 
   @include respond(desktop) {
     right: 4%;
@@ -69,6 +128,7 @@
 }
 
 .header__bookbutton:hover {
+  cursor: pointer;
   transform: scale(1.05);
   background: $color-primary-red;
 }
@@ -77,16 +137,20 @@
   background-image: url(/img/hero-small.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  width: 100vw;
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
 
-  @include respond(desktop) {
-    background-image: url(/img/hero-lg.jpg);
+  @include respond(lg-mobile) {
+    background-image: url(/img/hero-med.jpg);
+    background-size: cover;
     background-position: center;
+    height: 80vh;
     clip-path: none;
-    height: 80vh;  
     margin-bottom: 10rem;
+  }
+
+  @include respond(bg-desktop) {
+    background-image: url(/img/hero-lg.jpg);
   }
 }
 
@@ -116,7 +180,13 @@
     display: initial;
     position: absolute;
     bottom: 2.95rem;
-    left: 50%;
-    transform: translateX(-50%);
+    left: calc(50% - 37.5px);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+@include respond(desktop) {
+  .header__scroll:hover {
+    transform: translateY(3px);
   }
 }

@@ -1,10 +1,13 @@
 @mixin respond($breakpoint) {
+  @if $breakpoint == lg-mobile {
+    @media only screen and(min-width: 28.125em) { @content };
+  }
+  
   @if $breakpoint == desktop {
     @media only screen and (min-width: 70em) { @content };
     }
 
-
   @if $breakpoint == big-desktop {
-    @media only screen and (min-width: 112.5em) { @content };
+    @media only screen and (min-width: 87.5em) { @content };
    }
 }

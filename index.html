@@ -8,51 +8,58 @@
 </head>
 <body>
   <header>
+    <header class="header__desktop"></header>
     <div class="header">
       <a href="#" class="header__mark"><img src="img/logo-small.svg" class="header__logo" alt="mat rebel logo"></a>
       <nav class="header__nav">
         <ul>
-          <li class="header__navitem nav--border"><a href="#">About our classes</a></li>
-          <li class="header__navitem nav--border"><a href="#">Timetable</a></li>
-          <li class="header__navitem nav--border"><a href="#">Private classes</a></li>
+          <li class="header__navitem">
+            <a class="header__navlink" href="#about">About our classes</a>
+          </li>
+          <li class="header__navitem">
+            <a class="header__navlink" href="#classes">Timetable</a>
+          </li>
+          <li class="header__navitem">
+            <a class="header__navlink" href="#privateclass">Private classes</a>
+          </li>
         </ul>
       </nav>
-      <button class="header__bookbutton" href="#">Book <br>now</button>
+      <a href="#classes"><button class="header__bookbutton">Book <br>now</button></a>
     </div>
     <div class="header__bg"></div>
     <div class="header__namaste"></div>
-    <img src="img/scroll-btn.svg" class="header__scroll">
+    <a href="#about"><img src="img/scroll-btn.svg" class="header__scroll"></a>
   </header>
 
-  <section class="about">
+  <section class="about fade" id="about">
     <img src="img/logomark.svg" class="about__logomark">
     <p class="section--content">
         Mat rebel is 60 minutes of yoga flow through a series of strength and focused exercise, complimented with deep breathing and calming of the mind.
     </p>
-    <button class="about__book btn btn-green" href="#">Book your class</button>
+    <a href="#classes" class="about__book btn btn--black" role="button">Book your class</a>
     <span class="vb--med"></span>
   </section>
 
-  <section class="benefits">
+  <section class="benefits fade">
     <h2 class="benefits__intro section--title">One class, all the benefits</h2>
     <p class="section--content">
         Great things happen when you pause and stretch. Re-focus on you, build stamina and strength from within.
     </p>
-    <button class="benefits__btn btn btn--min" href="#">Meet your instructor</button>
+    <a href="#instructor" class="benefits__btn btn btn--min">Meet your instructor</a>
     <img src="img/energise.svg" class="benefits__energise">
     <img src="img/pause.svg" class="benefits__pause">
     <img src="img/unwind.svg" class="benefits__unwind">
     <span class="vb--long"></span>
   </section>
 
-  <section class="instructor">
+  <section class="instructor fade" id="instructor">
     <h2 class="instructor__intro section--title">You're in good hands</h2>
-    <img src="img/vickie-small.png" class="instructor__img">
+    <img src="img/vickie-lg.jpg" class="instructor__img" alt="picture of our instructor, Vickie">
     <p class="instructor__content section--content">Hey I’m Vickie. I’ve had a love of yoga for   over a decade and fitness for a lifetime.<br><br>
     With Mat rebel, I hope to share my love of yoga practice and teaching to help you sculpt your perfect phyisque and build a healthy mind.
     </p>
     <img src="img/relax.svg" class="instructor__relax">
-    <button class="instructor__btn btn btn--min mbtm-lg" href="#">View class times</button>
+    <a href="#classes" class="instructor__btn btn btn--min mbtm-lg" href="#">View class times</a>
   </section>
 
   <section class="classes">
@@ -64,7 +71,7 @@
       <h3 class="classes__month">April 2018</h3>
       <span class="classes__date">Thursday 19<span class="sup-sm"><sup>th</sup></span></span>
 
-      <div class="classes__class">
+      <div class="classes__class" id="classes">
         <span class="classes__time">7:00 - 8:00pm</span>
         <h4 class="classes__name">Hatha Flow</h4>
         <span class="classes__venue">Wantage Methodist Church Hall</span>
@@ -72,7 +79,7 @@
           <img src="img/pin.svg" class="classes__venuepin">
           <span class="classes__map">map</span>
         </a>
-        <button class="btn classes__book">Reserve your space <span class="btn--add"></span>+</span></button>
+        <a href="#" class="btn classes__book">Reserve your space <span class="btn--add"></span>+</span></a>
         <div class="classes__border--btm"></div>
       </div>
 
@@ -84,7 +91,7 @@
             <img src="img/pin.svg" class="classes__venuepin">
             <span class="classes__map">map</span>
           </a>
-          <button class="btn classes__book">Reserve your space <span class="btn--add"></span>+</span></button>
+          <a href="#" class="btn classes__book">Reserve your space <span class="btn--add"></span>+</span></a>
         </div>
 
         <span class="classes__date">Thursday 26<span class="sup-sm"><sup>th</sup></span></span>
@@ -97,7 +104,7 @@
           <img src="img/pin.svg" class="classes__venuepin">
           <span class="classes__map">map</span>
         </a>
-        <button class="btn classes__book">Reserve your space <span class="btn--add"></span>+</span></button>
+        <a href="#" class="btn classes__book">Reserve your space <span class="btn--add"></span>+</span></a>
         <div class="classes__border--btm"></div>
       </div>
 
@@ -109,34 +116,34 @@
             <img src="img/pin.svg" class="classes__venuepin">
             <span class="classes__map">map</span>
           </a>
-          <button class="btn classes__book">Reserve your space <span class="btn--add"></span>+</span></button>
+          <a href="#" class="btn classes__book">Reserve your space <span class="btn--add"></span>+</span></a>
         </div>
 
         <div class="classes__showmore">Show more classes <img src="img/down-arrow.svg" class="down-arrow"></img></div>
     </div>
   </section>
 
-  <section class="privateclass">
-    <h2 class="privateclass__intro section--title">Tailored classes</h2>
+  <section class="privateclass fade" id="privateclass">
+    <h2 class="privateclass__intro section--title">Private classes</h2>
     <p class="section--content">
         A personal practice that’s right for you. One-on-one tuition or instruction for smaller groups.
     </p>
-    <button class="privateclass__btn btn btn--min" href="#">Get in touch</button>
+    <a href="mailto:vickie@matrebel.co.uk" class="privateclass__btn btn btn--min">Get in touch</a>
     <img src="img/strength.svg" class="privateclass__img">
   </section>
 
-  <section class="social">
+  <section class="social fade">
     <a href="#" class="social__logo"><img src="img/logo-small.svg"></a>
     <div class="social__icons">
       <img src="img/logomark-dark.svg">
       <span class="vb--small"></span>
-      <img src="img/instagram.svg" class="social-icon">
-      <img src="img/facebook.svg" class="social-icon">
+      <a href="https://www.instagram.com/matrebelyoga/"><img src="img/instagram.svg" class="social-icon"></a>
+      <a href="https://www.facebook.com/MatRebelYoga/"><img src="img/facebook.svg" class="social-icon"></a>
     </div>
   </section>
 
   <footer>
-    <div class="contact">
+    <div class="contact fade  ">
       <h2 class="section--title contact__title border">Contact us</h2>
       <a href="mailto:vickie@matrebel.co.uk" class="contact__email">vickie@matrebel.co.uk</a>
       <a href="#" class="contact__tel">07737133711</a>
@@ -144,6 +151,8 @@
     <img src="img/logomark.svg" class="footer__logomark">
     <span class="footer__legal">&copy; Mat Rebel 2018. All rights reserved.</span>
   </footer>
- <script src="#"></script> 
+
+  <script src="js/in-view.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
