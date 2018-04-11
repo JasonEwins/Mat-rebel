@@ -28,11 +28,14 @@
 }
 
 .about__book {
+  font-size: 1.3rem;
+
   @include respond(desktop) {
     grid-column-start: 2;
     grid-row-start: 3;
     margin-top: 3rem;
     margin-bottom: 10rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  
   }
 }

@@ -1,0 +1,14 @@
+.btn__book {
+  border: 1px solid $color-primary-black;
+  color: $color-white;
+  font-size: 1.6rem;
+  background-color: $color-primary-black;
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+  padding: 1.5rem 3.2rem;
+  transition: all 0.4s ease-out; 
+}
+
+.btn__book:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 82%);
+  background-color: $color-black;
+}

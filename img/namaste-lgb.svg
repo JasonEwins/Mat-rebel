@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="272px" height="122px" viewBox="0 0 272 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Namaste Ox</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="matrebel-desktop-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1022.000000, -192.000000)">
+        <g id="Namaste-Ox" transform="translate(1158.626663, 253.416876) rotate(-6.000000) translate(-1158.626663, -253.416876) translate(1023.126663, 178.416876)">
+            <polygon id="green-bg-top" fill="#D8D4C0" points="8.80049267 0.611049931 196.951426 27.0539391 188.206901 89.2744624 0.0559683881 62.8315732"></polygon>
+            <polygon id="green-bg-btm" fill="#D8D4C0" points="86.9819128 61.1890871 270.181506 86.9361108 261.436981 149.156634 78.2373885 123.40961"></polygon>
+            <text id="WANTAGE" transform="translate(177.298146, 103.102139) rotate(8.000000) translate(-177.298146, -103.102139) " font-family="DKMoreOrLess-Regular, DK More Or Less" font-size="44.88" font-weight="normal" letter-spacing="1.41372002" fill="#0E0E0E">
+                <tspan x="99.7981458" y="121.102139">WANTAGE</tspan>
+            </text>
+            <text id="Namaste" transform="translate(101.050000, 42.952000) rotate(8.000000) translate(-101.050000, -42.952000) " font-family="DKMoreOrLess-Regular, DK More Or Less" font-size="44.88" font-weight="normal" letter-spacing="1.41372002" fill="#0E0E0E">
+                <tspan x="19.05" y="60.952">Namaste</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

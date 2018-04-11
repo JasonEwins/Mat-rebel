@@ -1,5 +1,7 @@
-const header = document.querySelector('.header')
-const desktopHeader = document.querySelector('.header__desktop')
+const header = document.querySelector('.header');
+const desktopHeader = document.querySelector('.header__desktop');
+const sectionContent = document.querySelector('.section--content');
+const sectionTitle = document.querySelector('.section--title');
 
 desktopHeader.innerHTML = header.innerHTML;
 
@@ -11,6 +13,15 @@ inView('.header')
 inView('.fade')
   .on('enter', img => img.classList.add('visible'))
   .on('exit', img => img.classList.remove('visible'))
+
+
+inView('.section--content')
+  .on('enter', sectionContent => sectionContent.classList.add('fadein'))
+  .on('exit', sectionContent => sectionContent.classList.remove('fadein'))
+  
+ inView('.section--title') 
+  .on('enter', sectionTitle => sectionTitle.classList.add('fadein'))
+  .on('exit', sectionTitle => sectionTitle.classList.remove('fadein'))
 
 
 inView('.classes')

@@ -1,51 +1,3 @@
-// buttons
-.btn {
-  padding: 1.7rem 3.5rem;
-  margin-bottom: 4rem;
-  font-family: 'HKGrotesk-Medium', sans-serif;
-  font-size: 1.3rem;
-  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%); 
-
-  @include respond(desktop) {
-    font-size: 1.6rem;
-  }
-}
-
-.btn--black {
-    position: relative;
-    max-width: 100%;
-    background-color: $color-primary-black;
-    color: $color-white;
-    letter-spacing: .025em;
-    cursor: pointer;
-  }
-
-@include respond(desktop) {
-  .btn--black:after {
-    background-color: $color-white;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    opacity: 0;
-    width: 0;
-    -webkit-transition: .35s ease-in-out;
-    -o-transition: .35s ease-in-out;
-    transition: .35s ease-in-out;
-    -webkit-transition-property: width,opacity;
-    -o-transition-property: width,opacity;
-    transition-property: width,opacity;
-  } 
-
-  .btn--black:hover:after {
-    opacity: .1;
-    width: 100%;
-  }
-}
-
-
 // borders
 .vb--med,
 .vb--long {
@@ -65,7 +17,7 @@
 }
 
 .vb--long {
-  height: 35rem;
+  height: 25rem;
 
   @include respond(desktop) {
     display: none;
@@ -89,8 +41,6 @@
 .mbtm-lg {
   margin-bottom: 10rem;
 }
-
-
 
 // other 
 
