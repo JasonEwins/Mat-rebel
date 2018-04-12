@@ -15,9 +15,9 @@ footer {
   position: absolute;
   left: calc(50% - 5.1rem);
   display: inline-block;
-  margin-top: 1.9rem;
+  margin-top: 2.1rem;
   z-index: -1;
-  border-bottom: 8px solid $color-primary-yellow;
+  border-bottom: 7px solid $color-primary-yellow;
 	width: 10rem;
 	transform: skew(-10deg) rotate(2.5deg);
   -webkit-transform: skew(-10deg) rotate(2.5deg);
@@ -33,6 +33,7 @@ footer {
 
 .contact__email,
 .contact__tel {
+  font-family: 'HKGrotesk-Regular', sans-serif;
   display: block;
   font-size: 1.8rem;
   color: $color-black;
@@ -48,10 +49,13 @@ footer {
 }
 
 .footer__logomark {
+  width: 43px;
+  height: auto;
   margin-bottom: 3rem;
 }
 
 .footer__legal {
+  font-family: 'HKGrotesk-Light', sans-serif;
   display: block;
   font-size: 16px;
   color: $color-primary-grey;

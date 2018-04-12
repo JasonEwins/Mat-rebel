@@ -2,7 +2,8 @@
   font-family: 'HKGrotesk-Light';
     src:url('../fonts/HKGrotesk-Light.woff') format('woff'),
         url('../fonts/HKGrotesk-Light.woff2') format('woff2'),
-        url('../fonts/HKGrotesk-Light.eot') format('embedded-opentype'); 
+        url('../fonts/HKGrotesk-Light.eot') format('embedded-opentype'),
+        url('../fonts/HKGrotesk-Light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +12,8 @@
   font-family: 'HKGrotesk-Regular';
     src:url('../fonts/HKGrotesk-Regular.woff') format('woff'),
         url('../fonts/HKGrotesk-Regular.woff2') format('woff2'),
-        url('../fonts/HKGrotesk-Regular.eot') format('embedded-opentype'); 
+        url('../fonts/HKGrotesk-Regular.eot') format('embedded-opentype'),
+        url('../fonts/HKGrotesk-Regular-webfont.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -21,7 +23,8 @@
   font-family: 'HKGrotesk-Medium';
     src:url('../fonts/HKGrotesk-Medium.woff') format('woff'),
         url('../fonts/HKGrotesk-Medium.woff2') format('woff2'),
-        url('../fonts/HKGrotesk-Medium.eot') format('embedded-opentype'); 
+        url('../fonts/HKGrotesk-Medium.eot') format('embedded-opentype'),
+        url('../fonts/HKGrotesk-Medium-webfont.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -31,10 +34,22 @@
   font-family: 'HKGrotesk-Bold';
     src:url('../fonts/HKGrotesk-Bold.woff') format('woff'),
         url('../fonts/HKGrotesk-Bold.woff2') format('woff2'),
-        url('../fonts/HKGrotesk-Bold.eot') format('embedded-opentype'); 
+        url('../fonts/HKGrotesk-Bold.eot') format('embedded-opentype'),
+        url('../fonts/HKGrotesk-Bold.webfont-ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+  font-family: 'DK-More-Or-Less-Regular';
+  src:url('../fonts/DK-More-Or-Less-Regular.ttf.woff') format('woff'),
+      url('../fonts/DK-More-Or-Less-Regular.ttf.svg#DK-More-Or-Less-Regular') format('svg'),
+      url('../fonts/DK-More-Or-Less-Regular.ttf.eot'),
+      url('../fonts/DK-More-Or-Less-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 html,
 input {
@@ -51,7 +66,7 @@ body {
 
 .section--title {
   margin-bottom: 3rem;
-  font-family: 'HKGrotesk-Regular', sans-serif;
+  font-family: 'HKGrotesk-Light', sans-serif;
   font-size: 2rem; 
   transform: translateY(1rem);
   transition: 1s ease-in-out;

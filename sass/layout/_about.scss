@@ -18,6 +18,8 @@
 }
 
 .about__logomark {
+  width: 43px;
+  height: auto;
   margin-bottom: 5rem;
 
   @include respond(desktop) {
@@ -28,6 +30,7 @@
 }
 
 .about__book {
+  font-family: 'HKGrotesk-Medium', sans-serif;
   font-size: 1.3rem;
 
   @include respond(desktop) {

@@ -3,6 +3,7 @@
   background: $color-bg-grey;
   text-align: center;
   height: 95vh;
+  overflow: hidden;
 
   @include respond(desktop) {
     width: 100%;
@@ -44,35 +45,41 @@
 }
 
 .benefits__energise {
+  width: 116px;
+  height: 125px;
   top: 4rem;
-  right: 0;
+  right: -2rem;
 
   @include respond(desktop) {
-    right: -2rem;
+    right: -4rem;
     width: 240px;
     height: 195px;
   }
 }
 
 .benefits__pause {
+  width: 128px;
+  height: 156px;
   top: 43rem;
-  left: 0;
+  left: -2rem;
 
   @include respond(desktop) {
     top: 27rem;
-    left: -2rem;
+    left: -5rem;
     width: 259px;
     height: 256px;
   }
 }
 
 .benefits__unwind {
-  top: 52rem;
-  right: 0;
+  width: 250px;
+  height: 105px;
+  top: 49rem;
+  right: -2rem;
 
   @include respond(desktop) {
     top: 46rem;
-    right: -2rem;
+    right: -11rem;
     width: 603px;
     height: 157px;
   }

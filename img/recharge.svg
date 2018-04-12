@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="294px" height="319px" viewBox="0 0 294 319" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>recharge icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="matrebel-desktop-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1146.000000, -5048.000000)">
+        <g id="Private-tuition" transform="translate(0.000000, 4974.000000)">
+            <g id="recharge-icon" transform="translate(1337.000000, 241.000000) scale(-1, 1) translate(-1337.000000, -241.000000) translate(1142.000000, 75.000000)">
+                <text id="D" font-family="HelveticaNeue, Helvetica Neue" font-size="63" font-weight="normal" letter-spacing="0.192000058" fill="#CC775D">
+                    <tspan x="118.8" y="131.1">D</tspan>
+                </text>
+                <path d="M92.25,108.9 C100.225977,107.919141 106.168848,107.428711 110.078613,107.428711 C113.988379,107.428711 128.895508,107.919141 154.8,108.9" id="Line-3" stroke="#CC775D" stroke-width="4" stroke-linecap="square"></path>
+                <path d="M157.05,102.15 C162.570239,102.312305 166.732813,102.393457 169.53772,102.393457 C172.342627,102.393457 172.830054,102.312305 171,102.15" id="Line-3" stroke="#CC775D" stroke-width="4" stroke-linecap="square"></path>
+                <path d="M157.05,116.55 C159.662988,116.212207 161.947119,116.043311 163.902393,116.043311 C165.857666,116.043311 168.223535,116.212207 171,116.55" id="Line-3" stroke="#CC775D" stroke-width="4" stroke-linecap="square"></path>
+                <path d="M119.25,230.4 C138.871232,230.4 148.387498,222.081738 164.71305,213.686165 C203.185287,193.901443 238.5,157.388725 238.5,111.15 C238.5,86.2021963 214.286506,46.7967175 201.188806,27.651709 C185.693331,5.00185506 137.182251,3.82231608 114.950391,0.8015625 C106.365562,-0.364900953 109.852274,0.8015625 98.4550781,0.8015625 C91.9682851,0.8015625 75.9219713,4.4119151 68.860394,6.43663171 C25.7911396,24.4191005 0,61.5609537 0,111.15 C0,177.009956 53.3900436,230.4 119.25,230.4 Z" id="Oval-6" stroke="#2B2C32" stroke-width="0.648"></path>
+                <path d="M142.65,41.85 C141.222656,45.1664063 140.508984,47.6537109 140.508984,49.3119141 C140.508984,50.3021218 142.141014,55.9277182 142.65,60.0591797 C142.878908,61.9172391 142.878908,64.3975125 142.65,67.5" id="Line-4" stroke="#AEC1B9" stroke-width="2.7" stroke-linecap="square"></path>
+                <path d="M142.65,145.35 C144.585938,146.845242 145.553906,148.010672 145.553906,148.846289 C145.553906,161.51543 142.65,168.3 142.65,168.3" id="Line-4" stroke="#AEC1B9" stroke-width="2.7" stroke-linecap="square"></path>
+                <path d="M187.875,108.9 C190.053906,107.646094 192.078906,107.019141 193.95,107.019141 C195.821094,107.019141 201.446094,107.646094 210.825,108.9" id="Line-4" stroke="#AEC1B9" stroke-width="2.7" stroke-linecap="square"></path>
+                <path d="M180.467027,131.075319 C187.358057,132.738497 192.113123,134.046724 194.732227,135 C197.35133,135.953276 199.784912,137.261503 202.032973,138.924681" id="Line-4" stroke="#AEC1B9" stroke-width="2.7" stroke-linecap="square"></path>
+                <path d="M82.3670272,131.075319 L103.932973,138.924681" id="Line-4" stroke="#AEC1B9" stroke-width="2.7" stroke-linecap="square" transform="translate(93.150000, 135.000000) scale(-1, 1) translate(-93.150000, -135.000000) "></path>
+                <path d="M180.467027,77.0753189 C188.407844,77.2433746 193.925801,77.8906641 197.020898,79.0171875 C200.115996,80.1437109 201.786687,82.1128754 202.032973,84.9246811" id="Line-4" stroke="#AEC1B9" stroke-width="2.7" stroke-linecap="square" transform="translate(191.250000, 81.000000) scale(1, -1) translate(-191.250000, -81.000000) "></path>
+                <path d="M80.5670272,77.2518461 C81.9164249,77.0164764 82.9144601,77.0164764 83.5611328,77.2518461 C84.2078055,77.4872157 90.3984189,80.1036698 102.132973,85.1012084" id="Line-4" stroke="#AEC1B9" stroke-width="2.7" stroke-linecap="square" transform="translate(91.350000, 81.088264) scale(-1, -1) translate(-91.350000, -81.088264) "></path>
+                <path d="M166.439938,71.0359948 C166.766096,66.2941219 167.474593,63.015457 168.56543,61.2 C169.656266,59.384543 172.88781,56.1058781 178.260062,51.3640052" id="Line-4" stroke="#AEC1B9" stroke-width="2.7" stroke-linecap="square"></path>
+                <path d="M106.139938,71.0359948 C109.578405,68.3708473 111.548425,66.6208933 112.05,65.7861328 C112.551575,64.9513723 114.521595,60.1439964 117.960062,51.3640052" id="Line-4" stroke="#AEC1B9" stroke-width="2.7" stroke-linecap="square" transform="translate(112.050000, 61.200000) scale(-1, 1) translate(-112.050000, -61.200000) "></path>
+                <path d="M166.437,162.835995 C166.5553,160.502406 167.381378,157.954405 168.915234,155.191992 C170.449091,152.429579 173.264034,148.42025 177.360062,143.164005" id="Line-4" stroke="#AEC1B9" stroke-width="2.7" stroke-linecap="square" transform="translate(171.898531, 153.000000) scale(1, -1) translate(-171.898531, -153.000000) "></path>
+                <path d="M111.537,162.835995 C111.6553,160.502406 112.481378,157.954405 114.015234,155.191992 C115.549091,152.429579 118.364034,148.42025 122.460062,143.164005" id="Line-4" stroke="#AEC1B9" stroke-width="2.7" stroke-linecap="square" transform="translate(116.998531, 153.000000) scale(-1, -1) translate(-116.998531, -153.000000) "></path>
+                <text id="RECHARGE.." transform="translate(280.358013, 285.168183) scale(-1, 1) rotate(-7.000000) translate(-280.358013, -285.168183) " font-family="DKMoreOrLess-Regular, DK More Or Less" font-size="55" font-weight="normal" letter-spacing="0.167619109" fill="#2B2C32">
+                    <tspan x="174.358013" y="306.668183">RECHARGE..</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -3,14 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="device=device-width, initial-scale=1.0">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117323179-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117323179-1');
+  </script>
+  <!-- Hotjar Tracking Code for http://www.matrebel.co.uk -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:844388,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <title>Mat Rebel Yoga</title>
 </head>
 <body>
   <header>
     <header class="header__desktop"></header>
     <div class="header">
-      <a href="#" class="header__mark"><img src="img/logo-small.svg" class="header__logo" alt="mat rebel logo"></a>
+      <a href="index.html" class="header__mark"><img src="img/mr-logo.png" class="header__logo" alt="mat rebel logo"></a>
       <nav class="header__nav">
         <ul>
           <li class="header__navitem">
@@ -37,7 +57,7 @@
   </header>
 
   <section class="about fade" id="about">
-    <img src="img/logomark.svg" class="about__logomark">
+    <img src="img/logomark.png" class="about__logomark">
     <p class="section--content">
         Mat rebel is 60 minutes of yoga flow through a series of strength and focused exercise, complimented with deep breathing and calming of the mind.
     </p>
@@ -54,29 +74,29 @@
     <img src="img/energise.svg" class="benefits__energise">
     <img src="img/pause.svg" class="benefits__pause">
     <img src="img/unwind.svg" class="benefits__unwind">
-    <span class="vb--long"></span>
   </section>
 
   <section class="instructor fade" id="instructor">
     <h2 class="instructor__intro section--title">You're in good hands</h2>
-    <img src="img/vickie-lg.jpg" class="instructor__img" alt="picture of our instructor, Vickie">
+    <img src="img/vickie.jpg" class="instructor__img" alt="picture of our instructor, Vickie">
     <p class="instructor__content section--content">Hey I’m Vickie. I’ve had a love of yoga for   over a decade and fitness for a lifetime.<br><br>
     With Mat rebel, I hope to share my love of yoga practice and teaching to help you sculpt your perfect phyisque and build a healthy mind.
     </p>
     <img src="img/relax.svg" class="instructor__relax">
+    <img src="img/recharge.svg" class="instructor__recharge">
     <a href="#classes" class="instructor__btn btn--min mbtm-lg" href="#">View class times</a>
   </section>
 
   <section class="classes">
     <h2 class="classes__intro section--title">Classes</h2>
-    <span class="classes__pricing--top"><span class="pricing--greenbg">£45</span> for a block of 6 consecutive classes (£7.50 per class)</span>
+    <span class="classes__pricing--top"><span class="pricing--redbg">£45</span> for a block of 6 consecutive classes (£7.50 per class)</span>
     <span class="classes__pricing--btm"><span class="pricing--yellowbg">£10</span> per class for drop-in</span>
     <div class="hb-btm"></div>
     <div class="classes__timetable">
-      <h3 class="classes__month">April 2018</h3>
+      <h3 class="classes__month" id="classes">April 2018</h3>
       <span class="classes__date">Thursday 19<span class="sup-sm"><sup>th</sup></span></span>
 
-      <div class="classes__class" id="classes">
+      <div class="classes__class">
         <span class="classes__time">7:00 - 8:00pm</span>
         <h4 class="classes__name">Hatha Flow</h4>
         <span class="classes__venue">Wantage Methodist Church Hall</span>
@@ -128,7 +148,7 @@
       <input type="checkbox" class="classes__showmore-state" id="show-2" />
 
       <div class="classes__target">
-        <h3 class="classes__month">May 2018</h3>
+        <h3 class="classes__month classes__month--mtl">May 2018</h3>
         <span class="classes__date">Thursday 3<span class="sup-sm"><sup>rd</sup></span></span>
       
         <div class="classes__class">
@@ -184,19 +204,19 @@
     </div>
   </section>
 
-  <section class="privateclass fade" id="privateclass">
+  <section class="privateclass fade">
     <h2 class="privateclass__intro section--title">Private classes</h2>
     <p class="section--content">
         A personal practice that’s right for you. One-on-one tuition or instruction for smaller groups.
     </p>
-    <a href="mailto:vickie@matrebel.co.uk" class="privateclass__btn btn--min">Get in touch</a>
+    <a href="mailto:vickie@matrebel.co.uk?subject=Mat Rebel Private Classes" class="privateclass__btn btn--min" id="privateclass">Get in touch</a>
     <img src="img/strength.svg" class="privateclass__img">
   </section>
 
   <section class="social fade">
-    <a href="#" class="social__logo"><img src="img/logo-small.svg"></a>
+    <a href="#" class="social__logo"><img src="img/mr-logo.png" class="social__type" ></a>
     <div class="social__icons">
-      <img src="img/logomark-dark.svg">
+      <img class="social__mark--dark" src="img/logomark-dark.png">
       <span class="vb--small"></span>
       <a href="https://www.instagram.com/matrebelyoga/"><img src="img/instagram.svg" class="social-icon"></a>
       <a href="https://www.facebook.com/MatRebelYoga/"><img src="img/facebook.svg" class="social-icon"></a>
@@ -206,10 +226,10 @@
   <footer>
     <div class="contact fade">
       <h2 class="section--title contact__title border">Contact us</h2>
-      <a href="mailto:vickie@matrebel.co.uk?subject=Website enquiry" class="contact__email">vickie@matrebel.co.uk</a>
+      <a href="mailto:vickie@matrebel.co.uk?subject=Website enquiry " class="contact__email">vickie@matrebel.co.uk</a>
       <a href="#" class="contact__tel">07737133711</a>
     </div>
-    <img src="img/logomark.svg" class="footer__logomark">
+    <img src="img/logomark.png" class="footer__logomark">
     <span class="footer__legal">&copy; Mat Rebel 2018. All rights reserved.</span>
   </footer>
 

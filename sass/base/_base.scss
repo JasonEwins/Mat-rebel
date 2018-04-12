@@ -21,7 +21,11 @@ body {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 400;
+
+    @include respond(desktop) {
+      font-weight: 600;
+    }
 }
 
 a {

@@ -35,6 +35,7 @@
 }
 
 .classes__name {
+  font-family: 'HKGrotesk-Medium', sans-serif;
   display: block;
   font-size: 1.8rem;
   margin-bottom: -4px;
@@ -52,7 +53,7 @@
 
 .classes__venue {
   display: block;
-  font-family: 'HKGrotesk-Regular', sans-serif;
+  font-family: 'HKGrotesk-Light', sans-serif;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
 
@@ -82,26 +83,28 @@
   @include respond(desktop) {
     display: none;
   }
-
 }
 
 .classes__map {
+  font-family: 'HKGrotesk-Regular', sans-serif;
   font-size: 1.6rem;
   padding-left: 1rem;
   color: $color-primary-red;
 }
 
 .classes__book {
-  font-size: 1.8rem;
+  font-family: 'HKGrotesk-Medium', sans-serif;
+  font-size: 1.6rem;
   margin-bottom: 4rem;
   padding: 1.7rem 2.2rem;
-  background-color: $color-btn-grey;
+  background-color: $color-grey;
   clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
 
   @include respond(desktop) {
     grid-column-start: 4;
     grid-row-start: 1;  
     margin-bottom: 0;
+    font-size: 1.8rem;
     transition: all .5s ease-in-out;
   }
 }
