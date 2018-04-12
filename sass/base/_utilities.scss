@@ -14,6 +14,10 @@
 
 .vb--med {
   height: 19rem;
+
+  @include respond(sm-mobile) {
+    height: 15rem;
+  }
 }
 
 .vb--long {

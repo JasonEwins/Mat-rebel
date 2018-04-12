@@ -62,12 +62,6 @@ ul {
   font-weight: normal;
   font-style: normal; }
 
-@font-face {
-  font-family: 'DK-More-Or-Less-Regular';
-  src: url("../fonts/DK-More-Or-Less-Regular.ttf.woff") format("woff"), url("../fonts/DK-More-Or-Less-Regular.ttf.svg#DK-More-Or-Less-Regular") format("svg"), url("../fonts/DK-More-Or-Less-Regular.ttf.eot"), url("../fonts/DK-More-Or-Less-Regular.ttf.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
-
 html,
 input {
   -webkit-font-smoothing: antialiased;
@@ -106,6 +100,9 @@ body {
 
 .vb--med {
   height: 19rem; }
+  @media only screen and (max-width: 20em) {
+    .vb--med {
+      height: 15rem; } }
 
 .vb--long {
   height: 20rem; }
@@ -359,7 +356,8 @@ body {
   .header__navlink:hover {
     color: #AEC1B9; } }
 
-.header__bookbutton {
+.header__bookbutton,
+.header__bookbutton:active {
   position: absolute;
   padding-left: 1.5rem;
   top: 1.8rem;
@@ -378,7 +376,8 @@ body {
   z-index: 1;
   border: none; }
   @media only screen and (min-width: 70em) {
-    .header__bookbutton {
+    .header__bookbutton,
+    .header__bookbutton:active {
       display: none;
       right: 4%;
       line-height: 1.3rem;
@@ -449,7 +448,7 @@ body {
     .header__scroll {
       display: initial;
       position: absolute;
-      bottom: 1rem;
+      bottom: calc(10% - 37.5px);
       left: calc(50% - 37.5px);
       transition: all 0.2s ease-in-out; } }
 
@@ -541,6 +540,7 @@ body {
   right: -2rem; }
   @media only screen and (min-width: 70em) {
     .benefits__energise {
+      right: -4rem;
       width: 240px;
       height: 195px; } }
 
@@ -549,6 +549,9 @@ body {
   height: 156px;
   top: 43rem;
   left: -2rem; }
+  @media only screen and (max-width: 20em) {
+    .benefits__pause {
+      top: 1rem; } }
   @media only screen and (min-width: 70em) {
     .benefits__pause {
       top: 27rem;
@@ -561,6 +564,9 @@ body {
   height: 105px;
   top: 49rem;
   right: -2rem; }
+  @media only screen and (max-width: 20em) {
+    .benefits__unwind {
+      top: 43rem; } }
   @media only screen and (min-width: 70em) {
     .benefits__unwind {
       top: 46rem;
@@ -662,7 +668,7 @@ body {
   display: block;
   margin-bottom: 1.8rem;
   font-family: 'HKGrotesk-Regular', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.6rem;
   padding: 0 4.75rem; }
   @media only screen and (min-width: 70em) {

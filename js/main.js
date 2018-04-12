@@ -37,7 +37,7 @@ anchors.forEach(anchor => {
     if (href.charAt(0) === '#') {
       event.preventDefault()
       document.querySelector(href).scrollIntoView({
-        behavior: 'smooth'
+        behavior: 'smooth',
       })
     }
   })

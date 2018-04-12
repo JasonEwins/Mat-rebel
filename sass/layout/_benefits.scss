@@ -63,6 +63,10 @@
   top: 43rem;
   left: -2rem;
 
+  @include respond(sm-mobile) {
+    top: 1rem;
+  }
+
   @include respond(desktop) {
     top: 27rem;
     left: -5rem;
@@ -76,6 +80,10 @@
   height: 105px;
   top: 49rem;
   right: -2rem;
+
+  @include respond(sm-mobile) {
+    top: 43rem;
+  }
 
   @include respond(desktop) {
     top: 46rem;
