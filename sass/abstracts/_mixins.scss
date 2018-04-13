@@ -3,7 +3,7 @@
     @media only screen and(max-width: 20em) { @content };
   }
 
-  @if $breakpoint == lg-mobile {
+  @if $breakpoint == mobile-land {
     @media only screen and(min-width: 25em) { @content };
   }
   
@@ -12,7 +12,7 @@
     }
 
   @if $breakpoint == desktop-small {
-    @media only screen and (min-width: 70rem) { @content };
+    @media only screen and (min-width: 77.5rem) { @content };
   }  
 
   @if $breakpoint == big-desktop {

@@ -60,7 +60,7 @@
 .header__mark {
   @include respond(tab-land) {
     margin-left: 5%;
-    margin-right: 30%;
+    margin-right: 20%;
     cursor: pointer;
   }
 }
@@ -70,11 +70,16 @@
 
   @include respond(tab-land) {
     display: initial;
-    margin-left: 2%;
+    float: right;
+    margin-left: 5%;
   }  
-
+  
   @include respond(desktop-small) {
-    margin-left: 7%;
+    margin-left: 17%;
+  }
+
+  @include respond(big-desktop) {
+    margin-left: 17%;
   }
 }
 
@@ -116,10 +121,20 @@
   color: white;
   z-index: 1;
   border: none;
+  outline: none;
   animation: fadein 1.5s ease-in;
 
   @include respond(tab-land) {
     display: none;
+    height: 0;
+  }
+}
+
+@include respond(tab-land) {
+  .header__desktop .header__bookbutton,
+  .header__desktop .header.header__bookbutton:active {
+    display: initial;
+    height: 6.5rem;
     right: 4%;
     line-height: 1.3rem;
     transition: all 0.25s ease-in-out;
@@ -169,7 +184,7 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
   animation: fadein 1.5s ease-in-out;
 
-  @include respond(lg-mobile) {
+  @include respond(mobile-land) {
     background-image: url(/img/hero-med.jpg);
     background-size: cover;
     background-position: center;
@@ -201,7 +216,7 @@
   animation: fadein 2s ease-in; 
 
   @include respond(tab-land) {
-    background-image: url(/img/namaste-lg.svg);
+    background-image: url(/img/namaste-med.png);
     background-repeat: no-repeat;
     width: 271px;
     height: 150px;

@@ -21,6 +21,11 @@ h2 {
     h2 {
       font-weight: 600; } }
 
+h3 {
+  font-family: 'HKGrotesk-Medium', sans-serif;
+  font-weight: 400 !important;
+  font-weight: 600; }
+
 a {
   text-decoration: none;
   color: #1D1D1D; }
@@ -132,6 +137,9 @@ body {
 .sup-sm {
   font-size: 1.4rem; }
 
+/*.medium {
+  font-weight: 600;
+}*/
 .btn__book {
   border: 1px solid #2B2C32;
   color: #FFFFFF;
@@ -342,7 +350,7 @@ body {
 @media only screen and (min-width: 64em) {
   .header__mark {
     margin-left: 5%;
-    margin-right: 30%;
+    margin-right: 20%;
     cursor: pointer; } }
 
 .header__nav {
@@ -350,10 +358,14 @@ body {
   @media only screen and (min-width: 64em) {
     .header__nav {
       display: initial;
-      margin-left: 2%; } }
-  @media only screen and (min-width: 70rem) {
+      float: right;
+      margin-left: 5%; } }
+  @media only screen and (min-width: 77.5rem) {
     .header__nav {
-      margin-left: 7%; } }
+      margin-left: 17%; } }
+  @media only screen and (min-width: 87.5em) {
+    .header__nav {
+      margin-left: 17%; } }
 
 .header__navitem {
   float: left;
@@ -388,14 +400,22 @@ body {
   color: white;
   z-index: 1;
   border: none;
+  outline: none;
   animation: fadein 1.5s ease-in; }
   @media only screen and (min-width: 64em) {
     .header__bookbutton,
     .header__bookbutton:active {
       display: none;
-      right: 4%;
-      line-height: 1.3rem;
-      transition: all 0.25s ease-in-out; } }
+      height: 0; } }
+
+@media only screen and (min-width: 64em) {
+  .header__desktop .header__bookbutton,
+  .header__desktop .header.header__bookbutton:active {
+    display: initial;
+    height: 6.5rem;
+    right: 4%;
+    line-height: 1.3rem;
+    transition: all 0.25s ease-in-out; } }
 
 .header__bookbutton:hover {
   cursor: pointer;
@@ -459,7 +479,7 @@ body {
   animation: fadein 2s ease-in; }
   @media only screen and (min-width: 64em) {
     .header__namaste {
-      background-image: url(/img/namaste-lg.svg);
+      background-image: url(/img/namaste-med.png);
       background-repeat: no-repeat;
       width: 271px;
       height: 150px;
