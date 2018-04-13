@@ -23,7 +23,7 @@ body {
 h2 {
   font-weight: 400;
 
-    @include respond(desktop) {
+    @include respond(tab-land) {
       font-weight: 600;
     }
 }

@@ -8,7 +8,7 @@
       0 100%
     );
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     clip-path: polygon(
       0 0,
       100% 0%,
@@ -25,7 +25,7 @@
 .classes__intro {
   padding-top: 5rem;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     padding-top: 12rem;
   }
 }
@@ -39,7 +39,7 @@
   line-height: 2.6rem;
   padding: 0 4.75rem;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     font-size: 2rem;
   }
 }
@@ -52,15 +52,15 @@
   background: $color-primary-yellow;
 }
 
-.pricing--redbg {
-  background: $color-primary-red;
+.pricing--greenbg {
+  background: $color-primary-green;
 }
 
 .classes__month {
   font-family: 'HKGrotesk-Medium', sans-serif;
   font-size: 2.1rem;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     padding-top: 2rem;
     color: $color-primary-black;
   }
@@ -80,7 +80,7 @@
   font-size: 1.8rem;
   color: $color-white;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     margin-bottom: 6rem;
   }
 }

@@ -2,11 +2,12 @@
   position: relative;
   height: 6rem;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     width: 100%;
     display: flex;
     align-items: center;
     height: 7rem;
+    animation: fadein 1.5s ease-in, slideInFromTop 1s ease-in;
   }
 }
 
@@ -14,7 +15,7 @@
   display: none;
 }
 
-@include respond(desktop) {
+@include respond(tab-land) {
   .header__desktop {
     display: flex;
     align-items: center;
@@ -48,15 +49,16 @@
   height: 24px;
   margin-top: 2rem;
   margin-left: 2.7rem;
+  animation: fadein 2s ease-in, slideInFromTop 1s ease-in;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     margin-top: 0;
     margin-left: 0;
   }
 }
 
 .header__mark {
-  @include respond(desktop) {
+  @include respond(tab-land) {
     margin-left: 5%;
     margin-right: 30%;
     cursor: pointer;
@@ -66,10 +68,14 @@
 .header__nav {
   display: none;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     display: initial;
-    margin-left: 7%;
+    margin-left: 2%;
   }  
+
+  @include respond(desktop-small) {
+    margin-left: 7%;
+  }
 }
 
 .header__navitem {
@@ -77,7 +83,7 @@
   margin-right: 4.3rem;
 }
   
-@include respond(desktop) {
+@include respond(tab-land) {
   .header__navlink {
     display: inline-block;
     position: relative;
@@ -110,8 +116,9 @@
   color: white;
   z-index: 1;
   border: none;
+  animation: fadein 1.5s ease-in;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     display: none;
     right: 4%;
     line-height: 1.3rem;
@@ -128,15 +135,17 @@
 .header__main {
   display: none;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     display: initial;
     position: absolute;
     top: 24rem;
     left: 8%;
+    z-index: 2;
+    animation: fadein 2s 1s both;
   }
 }
 
-@include respond(desktop) {
+@include respond(tab-land) {
   .header__intro {
     margin-bottom: 2rem;
     font-size: 3rem;
@@ -158,6 +167,7 @@
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
+  animation: fadein 1.5s ease-in-out;
 
   @include respond(lg-mobile) {
     background-image: url(/img/hero-med.jpg);
@@ -165,7 +175,13 @@
     background-position: center;
     height: 80vh;
     clip-path: none;
-    margin-bottom: 10rem;
+    /*clip-path: polygon(
+      0 0,
+      100% 0%,
+      100% calc(100% - 4vw),
+      0 100%
+    );*/
+    margin-bottom: 5rem;
   }
 
   @include respond(bg-desktop) {
@@ -181,14 +197,15 @@
   height: 9.5rem;
   position: absolute;
   top: 9rem;
-  left: calc(50% - 85px); 
+  left: calc(50% - 85px);
+  animation: fadein 2s ease-in; 
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     background-image: url(/img/namaste-lg.svg);
     background-repeat: no-repeat;
     width: 271px;
     height: 150px;
-    top: 15rem;
+    top: 18rem;
     left: 70%;
   }
 }
@@ -196,16 +213,17 @@
 .header__scroll {
   display: none;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     display: initial;
     position: absolute;
     bottom: calc(10% - 37.5px);
     left: calc(50% - 37.5px);
     transition: all 0.2s ease-in-out;
+    animation: fadein 2s 1s both;
   }
 }
 
-@include respond(desktop) {
+@include respond(tab-land) {
   .header__scroll:hover {
     transform: translateY(3px);
   }

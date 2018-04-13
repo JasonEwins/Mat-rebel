@@ -2,10 +2,10 @@
   position: relative;
   background: $color-bg-grey;
   text-align: center;
-  height: 95vh;
+  height: 90vh;
   overflow: hidden;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     width: 100%;
     height: auto;
     display: grid;
@@ -21,7 +21,7 @@
 .benefits__intro {
   padding-top: 17rem;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     grid-column-start: 2;
     grid-row-start: 1;
     margin-bottom: 0;
@@ -29,7 +29,7 @@
 }
 
 .benefits__btn {
-  @include respond(desktop) {
+  @include respond(tab-land) {
     grid-column-start: 2;
     grid-row-start: 3;
     align-self: start;
@@ -50,7 +50,7 @@
   top: 4rem;
   right: -2rem;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     right: -4rem;
     width: 240px;
     height: 195px;
@@ -60,14 +60,10 @@
 .benefits__pause {
   width: 128px;
   height: 156px;
-  top: 43rem;
+  top: 1rem;
   left: -2rem;
 
-  @include respond(sm-mobile) {
-    top: 1rem;
-  }
-
-  @include respond(desktop) {
+  @include respond(tab-land) {
     top: 27rem;
     left: -5rem;
     width: 259px;
@@ -78,14 +74,14 @@
 .benefits__unwind {
   width: 250px;
   height: 105px;
-  top: 49rem;
+  top: 46rem;
   right: -2rem;
 
   @include respond(sm-mobile) {
-    top: 43rem;
+    display: none;
   }
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     top: 46rem;
     right: -11rem;
     width: 603px;

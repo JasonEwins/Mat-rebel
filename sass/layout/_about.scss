@@ -1,10 +1,9 @@
 .about {
   position: relative;
-  margin-top: -5rem;
   height: 40rem;
   text-align: center;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     height: auto;
     display: grid;
     grid-template-columns: 25% 1fr 25%;
@@ -13,7 +12,15 @@
     justify-items: center;
     align-items: center;
     margin-top: 0;
-    /*margin-top: $margin-top-lrg;*/
+  }
+}
+
+.main--intro {
+  color: $color-black;
+
+  @include respond(tab-land) {
+    font-size: 2.4rem;
+    align-self: start;
   }
 }
 
@@ -22,7 +29,7 @@
   height: auto;
   margin-bottom: 5rem;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     grid-column-start: 2;
     grid-row-start: 1;
     margin-bottom: 0;
@@ -33,7 +40,7 @@
   font-family: 'HKGrotesk-Medium', sans-serif;
   font-size: 1.3rem;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     grid-column-start: 2;
     grid-row-start: 3;
     margin-top: 3rem;

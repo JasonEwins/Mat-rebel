@@ -17,7 +17,7 @@ body {
 
 h2 {
   font-weight: 400; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     h2 {
       font-weight: 600; } }
 
@@ -33,6 +33,12 @@ ul {
     opacity: 0; }
   100% {
     opacity: 100%; } }
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-5rem); }
+  100% {
+    transform: translateX(0); } }
 
 .fadein {
   animation: fadein 1s both;
@@ -79,7 +85,7 @@ body {
   font-size: 2rem;
   transform: translateY(1rem);
   transition: 1s ease-in-out; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .section--title {
       font-size: 3.2rem; } }
 
@@ -93,7 +99,7 @@ body {
   left: calc(50% - 0.5px);
   margin-top: 9rem;
   z-index: 8; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .vb--med,
     .vb--long {
       bottom: -13rem; } }
@@ -106,7 +112,7 @@ body {
 
 .vb--long {
   height: 20rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .vb--long {
       display: none; } }
 
@@ -115,7 +121,7 @@ body {
   margin-left: 6rem;
   margin-right: 6rem;
   margin-bottom: 3rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .hb-btm {
       margin-left: 30%;
       margin-right: 30%; } }
@@ -142,7 +148,7 @@ body {
 .classes__class {
   text-align: left;
   padding: 0 4.75rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .classes__class {
       display: grid;
       grid-template-columns: 10% auto auto auto 10%;
@@ -152,7 +158,7 @@ body {
       align-items: center;
       margin-top: 2rem; } }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .classes__class:nth-child(2n) {
     margin-bottom: 4rem; } }
 
@@ -161,7 +167,7 @@ body {
   font-family: 'HKGrotesk-Medium', sans-serif;
   font-size: 2.1rem;
   margin-bottom: 1.5rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .classes__time {
       grid-column-start: 2;
       justify-items: start;
@@ -174,7 +180,7 @@ body {
   display: block;
   font-size: 1.8rem;
   margin-bottom: -4px; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .classes__name {
       grid-column-start: 3;
       grid-row-start: 1;
@@ -188,7 +194,7 @@ body {
   font-family: 'HKGrotesk-Light', sans-serif;
   font-size: 1.8rem;
   margin-bottom: 1.5rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .classes__venue {
       grid-column-start: 3;
       grid-row-start: 2;
@@ -197,7 +203,7 @@ body {
       padding-bottom: 3rem;
       font-size: 2rem; } }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .classes__venue:hover {
     cursor: pointer;
     text-decoration: underline; } }
@@ -205,7 +211,7 @@ body {
 .classes__venuemap {
   display: flex;
   margin-bottom: 3.2rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .classes__venuemap {
       display: none; } }
 
@@ -222,7 +228,7 @@ body {
   padding: 1.7rem 2.2rem;
   background-color: #EDEDED;
   clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%); }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .classes__book {
       grid-column-start: 4;
       grid-row-start: 1;
@@ -230,7 +236,7 @@ body {
       font-size: 1.8rem;
       transition: all .5s ease-in-out; } }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .classes__book:hover {
     background: #AEC1B9; } }
 
@@ -241,7 +247,7 @@ body {
   border-bottom: 1px solid #EDEDED;
   margin-top: 5rem;
   margin-bottom: 3rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .classes__border--btm {
       width: 100%;
       margin-right: 0;
@@ -258,7 +264,7 @@ body {
   border: 1px solid #AEC1B9;
   font-family: 'HKGrotesk-Medium', sans-serif;
   font-size: 1.3rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .btn--min,
     .btn-min:active {
       font-size: 1.6rem;
@@ -276,29 +282,32 @@ body {
   font-size: 1.6rem;
   line-height: 2.2rem;
   transform: translateY(1.5rem);
-  transition: 1s ease-in-out; }
-  @media only screen and (min-width: 70em) {
+  transition: 1s ease-in-out;
+  color: #4C4C4C; }
+  @media only screen and (min-width: 64em) {
     .section--content {
-      font-size: 2.4rem;
+      font-size: 2rem;
       line-height: 3.1rem;
       grid-column-start: 2;
       grid-row-start: 2;
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      color: #1D1D1D; } }
 
 .header {
   position: relative;
   height: 6rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .header {
       width: 100%;
       display: flex;
       align-items: center;
-      height: 7rem; } }
+      height: 7rem;
+      animation: fadein 1.5s ease-in, slideInFromTop 1s ease-in; } }
 
 .header__desktop {
   display: none; }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .header__desktop {
     display: flex;
     align-items: center;
@@ -323,13 +332,14 @@ body {
   width: 172px;
   height: 24px;
   margin-top: 2rem;
-  margin-left: 2.7rem; }
-  @media only screen and (min-width: 70em) {
+  margin-left: 2.7rem;
+  animation: fadein 2s ease-in, slideInFromTop 1s ease-in; }
+  @media only screen and (min-width: 64em) {
     .header__logo {
       margin-top: 0;
       margin-left: 0; } }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .header__mark {
     margin-left: 5%;
     margin-right: 30%;
@@ -337,16 +347,19 @@ body {
 
 .header__nav {
   display: none; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .header__nav {
       display: initial;
+      margin-left: 2%; } }
+  @media only screen and (min-width: 70rem) {
+    .header__nav {
       margin-left: 7%; } }
 
 .header__navitem {
   float: left;
   margin-right: 4.3rem; }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .header__navlink {
     display: inline-block;
     position: relative;
@@ -374,8 +387,9 @@ body {
   transform: rotate(-7deg);
   color: white;
   z-index: 1;
-  border: none; }
-  @media only screen and (min-width: 70em) {
+  border: none;
+  animation: fadein 1.5s ease-in; }
+  @media only screen and (min-width: 64em) {
     .header__bookbutton,
     .header__bookbutton:active {
       display: none;
@@ -390,14 +404,16 @@ body {
 
 .header__main {
   display: none; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .header__main {
       display: initial;
       position: absolute;
       top: 24rem;
-      left: 8%; } }
+      left: 8%;
+      z-index: 2;
+      animation: fadein 2s 1s both; } }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .header__intro {
     margin-bottom: 2rem;
     font-size: 3rem;
@@ -414,15 +430,22 @@ body {
   background-position: top center;
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%); }
-  @media only screen and (min-width: 28.125em) {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
+  animation: fadein 1.5s ease-in-out; }
+  @media only screen and (min-width: 25em) {
     .header__bg {
       background-image: url(/img/hero-med.jpg);
       background-size: cover;
       background-position: center;
       height: 80vh;
       clip-path: none;
-      margin-bottom: 10rem; } }
+      /*clip-path: polygon(
+      0 0,
+      100% 0%,
+      100% calc(100% - 4vw),
+      0 100%
+    );*/
+      margin-bottom: 5rem; } }
 
 .header__namaste {
   background-image: url(/img/namaste-blonde.png);
@@ -432,36 +455,37 @@ body {
   height: 9.5rem;
   position: absolute;
   top: 9rem;
-  left: calc(50% - 85px); }
-  @media only screen and (min-width: 70em) {
+  left: calc(50% - 85px);
+  animation: fadein 2s ease-in; }
+  @media only screen and (min-width: 64em) {
     .header__namaste {
       background-image: url(/img/namaste-lg.svg);
       background-repeat: no-repeat;
       width: 271px;
       height: 150px;
-      top: 15rem;
+      top: 18rem;
       left: 70%; } }
 
 .header__scroll {
   display: none; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .header__scroll {
       display: initial;
       position: absolute;
       bottom: calc(10% - 37.5px);
       left: calc(50% - 37.5px);
-      transition: all 0.2s ease-in-out; } }
+      transition: all 0.2s ease-in-out;
+      animation: fadein 2s 1s both; } }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .header__scroll:hover {
     transform: translateY(3px); } }
 
 .about {
   position: relative;
-  margin-top: -5rem;
   height: 40rem;
   text-align: center; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .about {
       height: auto;
       display: grid;
@@ -470,14 +494,20 @@ body {
       grid-gap: 1rem;
       justify-items: center;
       align-items: center;
-      margin-top: 0;
-      /*margin-top: $margin-top-lrg;*/ } }
+      margin-top: 0; } }
+
+.main--intro {
+  color: #1D1D1D; }
+  @media only screen and (min-width: 64em) {
+    .main--intro {
+      font-size: 2.4rem;
+      align-self: start; } }
 
 .about__logomark {
   width: 43px;
   height: auto;
   margin-bottom: 5rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .about__logomark {
       grid-column-start: 2;
       grid-row-start: 1;
@@ -486,7 +516,7 @@ body {
 .about__book {
   font-family: 'HKGrotesk-Medium', sans-serif;
   font-size: 1.3rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .about__book {
       grid-column-start: 2;
       grid-row-start: 3;
@@ -498,9 +528,9 @@ body {
   position: relative;
   background: #FAFAFA;
   text-align: center;
-  height: 95vh;
+  height: 90vh;
   overflow: hidden; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .benefits {
       width: 100%;
       height: auto;
@@ -514,13 +544,13 @@ body {
 
 .benefits__intro {
   padding-top: 17rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .benefits__intro {
       grid-column-start: 2;
       grid-row-start: 1;
       margin-bottom: 0; } }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .benefits__btn {
     grid-column-start: 2;
     grid-row-start: 3;
@@ -538,7 +568,7 @@ body {
   height: 125px;
   top: 4rem;
   right: -2rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .benefits__energise {
       right: -4rem;
       width: 240px;
@@ -547,12 +577,9 @@ body {
 .benefits__pause {
   width: 128px;
   height: 156px;
-  top: 43rem;
+  top: 1rem;
   left: -2rem; }
-  @media only screen and (max-width: 20em) {
-    .benefits__pause {
-      top: 1rem; } }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .benefits__pause {
       top: 27rem;
       left: -5rem;
@@ -562,12 +589,12 @@ body {
 .benefits__unwind {
   width: 250px;
   height: 105px;
-  top: 49rem;
+  top: 46rem;
   right: -2rem; }
   @media only screen and (max-width: 20em) {
     .benefits__unwind {
-      top: 43rem; } }
-  @media only screen and (min-width: 70em) {
+      display: none; } }
+  @media only screen and (min-width: 64em) {
     .benefits__unwind {
       top: 46rem;
       right: -11rem;
@@ -577,7 +604,7 @@ body {
 .instructor {
   position: relative;
   text-align: center; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .instructor {
       overflow: hidden;
       width: 100%;
@@ -591,7 +618,7 @@ body {
 
 .instructor__intro {
   padding-top: 10rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .instructor__intro {
       grid-column-start: 2;
       grid-row-start: 1;
@@ -602,14 +629,14 @@ body {
   width: 12.5rem;
   height: auto;
   margin-bottom: 3.6rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .instructor__img {
       grid-column-start: 2;
       grid-row-start: 2;
       margin-top: 0;
       margin-bottom: 7rem; } }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .instructor__content {
     grid-column-start: 2;
     grid-row-start: 3;
@@ -617,7 +644,7 @@ body {
 
 .instructor__btn {
   margin-bottom: 10rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .instructor__btn {
       grid-column-start: 2;
       grid-row-start: 4;
@@ -628,7 +655,7 @@ body {
   display: none;
   position: absolute; }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .instructor__relax {
     display: initial;
     top: 12rem;
@@ -636,7 +663,7 @@ body {
     width: 259px;
     height: 238px; } }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .instructor__recharge {
     display: initial;
     position: absolute;
@@ -650,7 +677,7 @@ body {
   text-align: center;
   margin-top: 8rem;
   clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 10vw), 0 100%); }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .classes {
       clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 4vw), 0 100%); } }
 
@@ -659,7 +686,7 @@ body {
 
 .classes__intro {
   padding-top: 5rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .classes__intro {
       padding-top: 12rem; } }
 
@@ -671,7 +698,7 @@ body {
   font-size: 1.6rem;
   line-height: 2.6rem;
   padding: 0 4.75rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .classes__pricing--top,
     .classes__pricing--btm {
       font-size: 2rem; } }
@@ -682,13 +709,13 @@ body {
 .pricing--yellowbg {
   background: #D8D4C0; }
 
-.pricing--redbg {
-  background: #CC715E; }
+.pricing--greenbg {
+  background: #AEC1B9; }
 
 .classes__month {
   font-family: 'HKGrotesk-Medium', sans-serif;
   font-size: 2.1rem; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .classes__month {
       padding-top: 2rem;
       color: #2B2C32; } }
@@ -705,7 +732,7 @@ body {
   font-family: 'HKGrotesk-Medium', sans-serif;
   font-size: 1.8rem;
   color: #FFFFFF; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .classes__date {
       margin-bottom: 6rem; } }
 
@@ -754,7 +781,7 @@ body {
   position: relative;
   padding-top: 5rem;
   text-align: center; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .privateclass {
       width: 100%;
       height: auto;
@@ -766,13 +793,13 @@ body {
       align-items: center;
       padding-top: 6rem; } }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .privateclass__intro {
     grid-column-start: 2;
     grid-row-start: 1;
     margin-bottom: 0; } }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
   .privateclass__btn {
     grid-column-start: 2;
     grid-row-start: 3;
@@ -784,7 +811,7 @@ body {
   margin-top: 5rem;
   margin-bottom: 5rem;
   transform: translateX(-50%); }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .privateclass__img {
       margin-left: 0;
       transform: none;
@@ -849,7 +876,7 @@ footer {
   transform: skew(-10deg) rotate(2.5deg);
   -webkit-transform: skew(-10deg) rotate(2.5deg);
   -moz-transform: skew(-10deg) rotate(2.5deg); }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .border::after {
       width: 15.75rem;
       margin-top: 3.3rem;
@@ -862,7 +889,7 @@ footer {
   display: block;
   font-size: 1.8rem;
   color: #1D1D1D; }
-  @media only screen and (min-width: 70em) {
+  @media only screen and (min-width: 64em) {
     .contact__email,
     .contact__tel {
       font-size: 2.1rem; } }

@@ -7,7 +7,7 @@
   margin-top: 9rem;
   z-index: 8;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     bottom: -13rem;
   }
 }
@@ -23,7 +23,7 @@
 .vb--long {
   height: 20rem;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     display: none;
   }
 }
@@ -34,7 +34,7 @@
   margin-right: 6rem;
   margin-bottom: 3rem;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     margin-left: 30%;
     margin-right: 30%;
   }

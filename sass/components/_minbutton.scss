@@ -7,7 +7,7 @@
   font-family: 'HKGrotesk-Medium', sans-serif;
   font-size: 1.3rem;
   
-  @include respond(desktop) {
+  @include respond(tab-land) {
     font-size: 1.6rem;
     margin-bottom: 0;
     transition: 0.5s ease-in-out; 

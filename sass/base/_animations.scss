@@ -7,9 +7,17 @@
    }
  }
 
+ @keyframes slideInFromTop {
+  0% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .fadein {
   animation: fadein 1s both;
   transform: translateY(0) !important;
 }
-
 

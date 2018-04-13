@@ -60,7 +60,7 @@ body {
   transform: translateY(1rem);
   transition: 1s ease-in-out;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     font-size: 3.2rem;
   }
 }

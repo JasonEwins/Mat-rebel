@@ -23,7 +23,7 @@ footer {
   -webkit-transform: skew(-10deg) rotate(2.5deg);
   -moz-transform: skew(-10deg) rotate(2.5deg);
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     width: 15.75rem;
     margin-top: 3.3rem;
     left: calc(50% - 7.9rem);
@@ -38,7 +38,7 @@ footer {
   font-size: 1.8rem;
   color: $color-black;
 
-  @include respond(desktop) {
+  @include respond(tab-land) {
     font-size: 2.1rem;
   }
 }
