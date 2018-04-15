@@ -128,6 +128,14 @@
     display: none;
     height: 0;
   }
+
+  @include respond(big-desktop) {
+    display: initial;
+    height: 6.5rem;
+    right: 4%;
+    line-height: 1.3rem;
+    transition: all 0.25s ease-in-out;
+  }
 }
 
 @include respond(tab-land) {
@@ -182,7 +190,7 @@
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
-  animation: fadein 1.5s ease-in-out;
+  animation: fadein 1.5s ease;
 
   @include respond(mobile-land) {
     background-image: url(/img/hero-med.jpg);
@@ -199,7 +207,7 @@
     margin-bottom: 5rem;
   }
 
-  @include respond(bg-desktop) {
+  @include respond(big-desktop) {
     background-image: url(/img/hero-lg.jpg);
   }
 }

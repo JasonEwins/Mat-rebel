@@ -22,10 +22,6 @@ body {
 
 h2 {
   font-weight: 400;
-
-    @include respond(tab-land) {
-      font-weight: 600;
-    }
 }
 
 h3 {

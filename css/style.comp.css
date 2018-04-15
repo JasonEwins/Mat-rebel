@@ -17,9 +17,6 @@ body {
 
 h2 {
   font-weight: 400; }
-  @media only screen and (min-width: 64em) {
-    h2 {
-      font-weight: 600; } }
 
 h3 {
   font-family: 'HKGrotesk-Medium', sans-serif;
@@ -51,25 +48,25 @@ ul {
 
 @font-face {
   font-family: 'HKGrotesk-Light';
-  src: url("../fonts/HKGrotesk-Light.woff") format("woff"), url("../fonts/HKGrotesk-Light.woff2") format("woff2"), url("../fonts/HKGrotesk-Light.eot") format("embedded-opentype"), url("../fonts/HKGrotesk-Light-webfont.ttf") format("truetype");
+  src: url("../fonts/HKGrotesk-Light.woff") format("woff"), url("../fonts/HKGrotesk-Light.woff2") format("woff2"), url("../fonts/HKGrotesk-Light-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'HKGrotesk-Regular';
-  src: url("../fonts/HKGrotesk-Regular.woff") format("woff"), url("../fonts/HKGrotesk-Regular.woff2") format("woff2"), url("../fonts/HKGrotesk-Regular.eot") format("embedded-opentype"), url("../fonts/HKGrotesk-Regular-webfont.ttf") format("truetype");
+  src: url("../fonts/HKGrotesk-Regular.woff") format("woff"), url("../fonts/HKGrotesk-Regular.woff2") format("woff2"), url("../fonts/HKGrotesk-Regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'HKGrotesk-Medium';
-  src: url("../fonts/HKGrotesk-Medium.woff") format("woff"), url("../fonts/HKGrotesk-Medium.woff2") format("woff2"), url("../fonts/HKGrotesk-Medium.eot") format("embedded-opentype"), url("../fonts/HKGrotesk-Medium-webfont.ttf") format("truetype");
+  src: url("../fonts/HKGrotesk-Medium.woff") format("woff"), url("../fonts/HKGrotesk-Medium.woff2") format("woff2"), url("../fonts/HKGrotesk-Medium-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'HKGrotesk-Bold';
-  src: url("../fonts/HKGrotesk-Bold.woff") format("woff"), url("../fonts/HKGrotesk-Bold.woff2") format("woff2"), url("../fonts/HKGrotesk-Bold.eot") format("embedded-opentype"), url("../fonts/HKGrotesk-Bold.webfont-ttf") format("truetype");
+  src: url("../fonts/HKGrotesk-Bold.woff") format("woff"), url("../fonts/HKGrotesk-Bold.woff2") format("woff2"), url("../fonts/HKGrotesk-Bold.webfont-ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -86,7 +83,7 @@ body {
 
 .section--title {
   margin-bottom: 3rem;
-  font-family: 'HKGrotesk-Light', sans-serif;
+  font-family: 'HKGrotesk-Medium', sans-serif;
   font-size: 2rem;
   transform: translateY(1rem);
   transition: 1s ease-in-out; }
@@ -407,6 +404,14 @@ body {
     .header__bookbutton:active {
       display: none;
       height: 0; } }
+  @media only screen and (min-width: 87.5em) {
+    .header__bookbutton,
+    .header__bookbutton:active {
+      display: initial;
+      height: 6.5rem;
+      right: 4%;
+      line-height: 1.3rem;
+      transition: all 0.25s ease-in-out; } }
 
 @media only screen and (min-width: 64em) {
   .header__desktop .header__bookbutton,
@@ -451,7 +456,7 @@ body {
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 86%);
-  animation: fadein 1.5s ease-in-out; }
+  animation: fadein 1.5s ease; }
   @media only screen and (min-width: 25em) {
     .header__bg {
       background-image: url(/img/hero-med.jpg);
@@ -466,6 +471,9 @@ body {
       0 100%
     );*/
       margin-bottom: 5rem; } }
+  @media only screen and (min-width: 87.5em) {
+    .header__bg {
+      background-image: url(/img/hero-lg.jpg); } }
 
 .header__namaste {
   background-image: url(/img/namaste-blonde.png);
